@@ -139,6 +139,8 @@ let item=wardrobe.find(x=>x.id==id)
 
 item.wearCount++
 
+item.lastWear=new Date().toISOString().split("T")[0]
+
 saveWardrobe(wardrobe)
 
 renderWardrobe()
