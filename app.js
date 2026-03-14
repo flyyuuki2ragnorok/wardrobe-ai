@@ -58,11 +58,18 @@ if(p.length>=2){
 
 wardrobe.push({
 
-id:i+1,
-type:p[0],
-color:p[1],
-brand:p[2]||"",
-wearCount:0
+id:Date.now()+i,
+
+type:p[0].trim(),
+color:p[1].trim(),
+brand:p[2]?p[2].trim():"",
+
+season:"四季",
+scene:"日常",
+
+wearCount:0,
+lastWear:"",
+note:""
 
 })
 
