@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Wardrobe AI</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+
+<h1>Wardrobe AI</h1>
+
+<div id="setup"></div>
+
+<h2>衣柜</h2>
+<div id="summary"></div>
+<div id="wardrobe"></div>
+
+<h2>推荐</h2>
+
+<button onclick="recommend()">今日搭配</button>
+<div id="recommendation"></div>
+
+<h2>天气</h2>
+
+当前城市:
+<span id="cityLabel"></span>
+
+<button onclick="changeCity()">修改城市</button>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
